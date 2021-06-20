@@ -1,0 +1,47 @@
+.portfolio {
+	&-work {
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+	
+		&-one {
+			position: relative;
+			min-height: 1px;
+		
+			max-width: 100%;
+			flex: 0 0 100%;
+		}
+
+		&-inner {
+			margin: 0;
+		}
+	}
+
+	&__img {
+		width: 100% !important;
+		height: auto !important;
+	}
+	
+	&__title {
+		font-weight: bold;
+	}
+	
+	&__content {
+		margin-top: 5px;
+	}
+}
+
+
+@media (min-width: 425px) {
+	.portfolio-work {
+		&-one {
+			max-width: 50%;
+			flex: 0 0 50%;
+		}
+
+		&-inner {
+			margin: 0 10px;
+		}
+	}
+}
